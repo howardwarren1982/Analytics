@@ -1,0 +1,30 @@
+/* Buttons*/
+.btn {
+  font-size: var(--button-size);
+  font-weight: var(--button-weight);
+  border-radius: 68px;
+  &__clear {
+    background: transparent;
+    border: solid 1px var(--text-secondary);
+    color: var(--text-secondary);
+
+    cursor: pointer;
+  }
+
+  &__solid {
+    background: var(--color-secondary);
+    border: none;
+    color: var(--text-on-dark-bg);
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid var(--text-on-dark-bg);
+    }
+  }
+}
+
+.links_text {
+  font-weight: var(--link-weight);
+  font-size: var(--link-size);
+  color: var(--text-secondary);
+}

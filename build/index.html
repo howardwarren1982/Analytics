@@ -1,0 +1,277 @@
+<!-- SEO options and other
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="John Doe">
+      <meta name="description" content="Page description">
+      <meta property="og:title" content="Unique page title - My Site">
+      <meta property="og:description" content="Page description">
+      <meta property="og:image" content="https://www.mywebsite.com/image.jpg">
+      <meta property="og:image:alt" content="Image description">
+      <meta property="og:locale" content="en_GB">
+      <meta property="og:type" content="website">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="og:url" content="https://www.mywebsite.com/page">
+      <link rel="canonical" href="https://www.mywebsite.com/page">
+
+      <link rel="icon" href="/favicon.ico">
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+      <link rel="manifest" href="/my.webmanifest">
+      <meta name="theme-color" content="#FF00FF"> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <title>analytics</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header_slantedBG"></div>
+      <nav class="navbar flex flex-responsive row flex-space-between">
+        <div class="navbar__left flex ">
+          <div class="navbar__left_logo">
+            <img
+              src="../build/resources/img/LogoSubtract.svg"
+              alt="site with lightning strike going through it"
+            />
+           <img class="navbar__left_logo__analytics" src="../build/resources/img/herologoText.svg" alt="analytics">
+          </div>
+          <div class="navbar__left_links">
+            <ul class="links links--maintext flex">
+              <li> <a href="#">Products</a> </li>
+              <li> <a href="#">Pricing</a></li>
+              <li> <a href="#">FAQ</a></li>
+              <li> <a href="#">Blog</a></li>
+              <li> <a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar__right">
+          <button class="btn btn__clear">SIGN IN</button>
+          <button class="btn btn__clear">SIGN UP</button>
+        </div>
+      </nav>
+
+      <nav class="navbar--responsive flex row">
+        <div class="navbar--responsive__left flex">
+          <div class="navbar--responsive__left_logo">
+            <img
+              src="../build/resources/img/LogoSubtract.svg"
+              alt="site with lightning strike going through it"
+            />
+            <img class="navbar__left_logo__analytics" src="../build/resources/img/herologoText.svg" alt="analytics">
+          </div>
+          <div class="navbar--responsive__left_links">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <ul class="links--responsive links--maintext">
+              <li> <a href="#">Products</a> </li>
+              <li> <a href="#">Pricing</a></li>
+              <li> <a href="#">FAQ</a></li>
+              <li> <a href="#">Blog</a></li>
+              <li> <a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="navbar--responsive__right">
+          <button>SIGN IN</button>
+          <button>SIGN UP</button>
+        </div> -->
+      </nav>
+      <div class="hero row flex">
+        <div class="hero__left">
+          <h1 class="hero__maintext">
+            Monitor your business on real-time dashborad
+          </h1>
+          <p class="paragraph--maintext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+            nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+            vitae nibh nunc mattis imperdiet sed nullam.
+          </p>
+          <button class="btn btn__solid">Try for free</button>
+        </div>
+        <div class="hero__right">
+          <img
+            src="../build/resources/img/datacard.png"
+            alt=" Card that shows a lot of different charts"
+          />    
+          <img class="hero__right--circleChart" src="../build/resources/img/chart-3.png" alt="Circle chart" />
+          <div class="relative_div_for_circleChart"></div>
+        </div>
+      </div>
+    </header>
+    <section class="main_features_section row">
+      <h2>Main Features</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
+        aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh
+        nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus
+        pulvinar sit amet. Id vel in nam malesuada.
+      </p>
+
+      <div class="main_features_section__cards flex">
+        <div class="main_features_section__card">
+          <img src="../build/resources/img/ClockIcon.svg" />
+          <h6>Monitoring 24/7</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum
+            nisi aliquet volutpat.
+          </p>
+        </div>
+        <div class="main_features_section__card">
+
+          <img src="../build/resources/img/MonitorIcon.svg" />
+          <h6>Widget System</h6>
+          <p>
+            Sapien in etiam vitae nibh nunc mattis imperdiet
+             sed nullam. Vitae et, tortor pulvinar risus pulvinar.
+          </p>
+        </div>
+        </div>
+        <div class="main_features_section__card">
+          <img src="../build/resources/img/RocketIcon.svg" />
+          <h6>Best Performance</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum
+            nisi aliquet volutpat.
+          </p>
+        </div>
+        </div>
+      </div>
+
+      <div class="chart_info">
+         <div class="chart_info--text">
+            <h2>
+              Automated Reports
+                & Widget Alerts
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+              vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor
+              pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
+            </p>
+         </div>
+         <div class="chart_info--picture"> 
+            <img src="../build/resources/img/octogonChart.png" alt="Polygon chart" />
+         </div>
+      </div>
+
+      <div class="chart_info">
+        <div class="chart_info--text">
+           <h2>
+            Fully customizable to address your needs 
+           </h2>
+           <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+             nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+             vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor
+             pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
+           </p>
+        </div>
+        <div class="chart_info--picture"> 
+           <img src="../build/resources/img/BarChart.png" alt="Bar chart" />
+        </div>
+     </div>
+
+     <div class="chart_info">
+      <div class="chart_info--text">
+         <h2>
+            Pre-built Dashboard Templates
+         </h2>
+         <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+           nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+           vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor
+           pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
+         </p>
+      </div>
+      <div class="chart_info--picture"> 
+         <img src="../build/resources/img/calendar.png" alt="Calendar" />
+      </div>
+     </div>
+    </section>
+    <section class="pricing_plan row">
+      <h2>Pricing Plans</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
+        volutpat pellentesque volutpat est. </p>
+
+        <div class="pricing_plan--cards flex">
+
+            <div class="pricing_plan--card">
+              <h4>Starter</h4>
+              <p>up to 3 users</p>
+              <div class="pricing_plan--card-price">
+                 <span>&#36;29</span>
+              </div>
+              <p>per month</p>
+              <button>Order</button>
+            </div>
+
+            <div class="pricing_plan--card">
+              <h4>Standard</h4>
+              <p>up to 3 users</p>
+              <div class="pricing_plan--card-price">
+                 <span>&#36;99</span>
+              </div>
+              <p>per month</p>
+              <button>Order</button>
+            </div>
+
+            <div class="pricing_plan--card">
+              <h4>Premium</h4>
+              <p>up to 3 users</p>
+              <div class="pricing_plan--card-price">
+                 <span>&#36;299</span>
+              </div>
+              <p>per month</p>
+              <button>Order</button>
+            </div>
+        </div>
+    </section>
+    <footer class="row">
+      <div class="footer--logo"> <img src="../build/resources/img/SubtractlogoFooter.svg" alt="site logo">ANALYTICS</div>
+      <div class="footer--links">
+        <ul>
+          <li> <a href="#">Products</a> </li>
+              <li> <a href="#">Pricing Plans</a></li>
+              <li> <a href="#">FAQ</a></li>
+              <li> <a href="#">Blog</a></li>            
+        </ul>
+      </div>
+      <div class="footer--social">
+        <a href="#"><img src="../build/resources/img/Facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="../build/resources/img/Twitter.svg" alt="twitter"></a>
+        <a href="#"><img src="../build/resources/img/Instagram.svg" alt="Instagram"></a>
+      </div>
+    </footer>
+
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
+
+<!-- notes resposive pics
+
+<style>
+  img {
+  max-width: 100%;
+  }
+  </style>
+  
+  <picture>
+  <source type="image/webp" srcset="https://my-image.com/my-image-100.webp 1x, https://my-image.com/my-image-200.webp 2x">
+  <source type="image/png" srcset="https://my-image.com/my-image-100.png 1x, https://my-image.com/my-image-200.png 2x">
+  <img alt="my image" src="https://my-image.com/my-image-200.png" loading="lazy" width="100" height="100">
+  </picture> -->

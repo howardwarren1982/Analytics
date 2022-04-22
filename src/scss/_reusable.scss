@@ -1,0 +1,135 @@
+//-------------------------------------------------------------
+
+// Mixins
+
+//-------------------------------------------------------------
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) {
+      @content;
+    }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+@mixin for-any-size($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+@mixin toRem($property, $value) {
+  #{$property}: ($value / 16) + rem;
+}
+
+// example
+// div {
+//     @include toRem(width, 400);
+//     @include toRem(height, 400);
+//     @include toRem(font-size, 16);
+//     @include toRem(margin, 20);
+// }
+
+//-------------------------------------------------------------
+
+.row {
+  max-width: var(--max-screen-width);
+  margin: 0 auto 0 auto;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.even-columns {
+  display: flex;
+}
+.even-columns > * {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@include for-any-size(766px) {
+  .flex.flex-responsive {
+    flex-direction: column;
+  }
+
+  .flex-reverse.flex-responsive {
+    flex-direction: column;
+  }
+
+  .flex.flex-responsive.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .flex-reverse.flex-responsive.reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+.flex-rev-col {
+  display: flex;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//--------------------------------------------------------------
+
+//Funtions
+
+//-------------------------------------------------------------
+
+// PIXELS TO EMS
+// $target: the desired font size for the element
+// $parent: the targets parent element font size (default: 16)
+//------------------------------------------
+@function em($target, $context: 16) {
+  @return ($target / $context)+0em;
+}
+
+@function rem($value) {
+  @return ($value / 16)+0rem;
+}
+
+// Default
+//   .element {
+//     font-size:pxtoem(11);
+//   }
+
+// With custom $parent value
+//   .element {
+//     font-size:pxtoem(11, 20);
+//   }

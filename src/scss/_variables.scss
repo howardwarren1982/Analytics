@@ -1,0 +1,65 @@
+/*-------------------------- */
+/*Variables*/
+/*-------------------------- */
+
+:root {
+  /*Colors and color theme*/
+
+  --color-primary: #172755;
+
+  --color-secondary: #ef2a82;
+
+  --text-secondary: #8794ba;
+  --text-on-dark-bg: #ffffff;
+
+  /*text*/
+
+  --font-primary: "Roboto", sans-serif;
+
+  --font-base-par-size: calc((18 / 16) * 1rem);
+  --paragraph-weight: 400;
+  --paragraph-line-height: 27px;
+
+  --Hero-banner-weight: 700;
+  --Hero-banner-size: calc((50 / 16) * 1rem);
+  --Hero-banner-line-height: 120%;
+  --Hero-banner-width: 20ch;
+
+  --link-weight: 400;
+  --link-size: calc((16 / 16) * 1rem);
+
+  --button-size: calc((16 / 16) * 1rem);
+  --button-weight: 400;
+
+  --H2-weight: 700;
+  --H2-size: calc((40 / 16) * 1rem);
+  --H2-line-height: 46px;
+
+  --H4-weight: 700;
+  --H4-size: calc((30 / 16) * 1rem);
+  --H4-line-height: 35px;
+
+  --H6-weight: 700;
+  --H6-size: calc((16 / 16) * 1rem);
+  --H6-line-height: 19px;
+
+  /*spacing*/
+  --max-screen-width: 1160px;
+}
+//SCSS Example
+
+//Colors
+//$default-color: gray;
+// $font-color: darken($default-color, 60%);
+// $light-color: lighten($default-color, 20%);
+// $dark-color: darken($default-color, 20%);
+
+//Text Stacks
+// $helvetica-stack:  'Helvetica', sans-serif;
+// $futura-stack: 'Futura', sans-serif; //not imported yet
+// $georgia-stack: 'Georgia', sans-serif;
+
+//Font-sizes
+// $p-font-size: 16px;
+// $aTag-font-size: 13px;
+// $body-font-size: 17px;

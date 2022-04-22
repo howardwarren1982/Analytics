@@ -1,0 +1,12 @@
+{
+  "name": "Analytics site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "watch": "sass --watch src/scss:build/resources/css --style compressed"
+  },
+  "keywords": [],
+  "author": "Howard Warren",
+  "license": "ISC"
+}
