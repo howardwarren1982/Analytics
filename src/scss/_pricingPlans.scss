@@ -1,0 +1,27 @@
+.pricing_plan {
+  --card-bg-color: #2a407c;
+
+  .btn__clear {
+    color: #ffffff;
+  }
+  background-color: var(--color-primary);
+
+  .pricing_plan--cards {
+    gap: 80px;
+  }
+
+  .pricing_plan--card {
+    background: #0f1f4b;
+    opacity: 0.7;
+    /* card / shadow */
+    width: clamp(250px, 340px, 340px);
+    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+    border-radius: 30px;
+  }
+  .pricing_plan--card__white {
+    background: #ffffff;
+    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+    border-radius: 30px;
+    width: clamp(250px, 340px, 340px);
+  }
+}

@@ -1,0 +1,16 @@
+footer {
+  background-color: var(--color-primary);
+  color: var(--text-secondary);
+
+  .footer--social {
+    a {
+      margin-left: 40px;
+    }
+  }
+
+  .footer--links {
+    ul {
+      gap: 36px;
+    }
+  }
+}

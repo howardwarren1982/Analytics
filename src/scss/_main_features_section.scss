@@ -1,0 +1,22 @@
+.main_features_section {
+  margin-top: 75px;
+
+  .main_features_section__card {
+    max-width: 380px;
+
+    h6 {
+      font-size: var(--H6-size);
+      font-weight: var(--H6-weight);
+      line-height: var(--H6-line-height);
+      color: var(--color-primary);
+    }
+  }
+
+  .main_features_section__cards {
+    gap: 20px;
+  }
+
+  .chart_info {
+    margin-top: 120px;
+  }
+}

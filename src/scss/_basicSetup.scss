@@ -49,6 +49,13 @@ ul {
   color: var(--text-secondary);
 }
 
+.paragraph--card {
+  font-size: var(--font-card-par-size);
+  font-weight: var(--paragraph-weight);
+  line-height: var(--paragraph-line-height);
+  color: var(--text-secondary);
+}
+
 .links--maintext {
   font-size: var(--link-size);
   font-weight: var(--link-weight);

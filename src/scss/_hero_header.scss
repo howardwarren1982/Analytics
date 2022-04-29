@@ -30,6 +30,10 @@ header {
   }
 
   .navbar--responsive {
+    display: block;
+  }
+
+  .navbar {
     display: none;
   }
 
@@ -63,9 +67,9 @@ header {
 
   .hero__right {
     position: relative;
-    @include for-any-size(700px) {
+    @include for-any-size(1620px) {
       img {
-        width: 50vw;
+        width: 45vw;
       }
     }
   }
@@ -94,14 +98,45 @@ header {
   }
 
   .header_slantedBG {
-    position: absolute;
     z-index: -1;
-    width: 110%;
-    height: 102%;
-    top: -22%;
-    left: -5%;
-    transform: rotate(355deg);
+    position: absolute;
+    display: block;
+    width: 100vw;
+    transform: scale(185%, 185%);
+  }
+
+  @include for-any-size(1166px) {
+    .hero {
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 5px;
+      h1 {
+        font-size: 8vw;
+      }
+    }
+
+    .hero__right--circleChart {
+      display: none;
+    }
+
+    .header_slantedBG {
+      display: none;
+    }
+  }
+}
+
+@include for-any-size(1166px) {
+  header {
     background-color: var(--color-primary);
     border-bottom: 15px solid var(--color-secondary);
+
+    h1 {
+      margin: 0 auto;
+    }
+
+    p {
+      max-width: 50ch;
+      margin: 0 auto;
+    }
   }
 }
