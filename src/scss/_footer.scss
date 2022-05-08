@@ -1,3 +1,5 @@
+@use "reusable" as *;
+
 footer {
   background-color: var(--color-primary);
   color: var(--text-secondary);
@@ -11,6 +13,17 @@ footer {
   .footer--links {
     ul {
       gap: 36px;
+    }
+  }
+}
+@include for-any-size(1234px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .footer--links {
+    ul {
+      flex-direction: column;
     }
   }
 }

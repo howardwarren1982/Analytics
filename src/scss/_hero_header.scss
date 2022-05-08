@@ -40,6 +40,9 @@ header {
   .links--responsive {
     overflow: hidden;
     transition: all 0.8s ease-in-out;
+    li {
+      margin-top: 20px;
+    }
   }
 
   #nav-check {
@@ -61,8 +64,16 @@ header {
     height: 0px;
   }
   #nav-check:checked ~ .links--responsive {
-    height: calc(100vh - 90px);
+    height: calc(80vh - 90px);
     overflow-y: auto;
+  }
+
+  @include for-any-size(755px) {
+    .navbar--responsive__left {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
   .hero__right {
@@ -103,6 +114,16 @@ header {
     display: block;
     width: 100vw;
     transform: scale(185%, 185%);
+  }
+
+  @include for-any-size(500px) {
+    .hero {
+      p {
+        font-size: var(--mobile-p-font-size);
+        line-height: var(--mobile-p-line-height);
+        width: var(--mobile-p-width);
+      }
+    }
   }
 
   @include for-any-size(1166px) {
