@@ -2,6 +2,10 @@
 
 .main_features_section {
   margin-top: 75px;
+  overflow: visible;
+  .chart_info {
+    gap: 90px;
+  }
 
   .main_features_section__card {
     max-width: 380px;
@@ -11,6 +15,35 @@
       font-weight: var(--H6-weight);
       line-height: var(--H6-line-height);
       color: var(--color-primary);
+    }
+  }
+
+  .chart_info--text {
+    margin-top: 89px;
+
+    h2 {
+      font-size: var(--H2-size);
+      font-weight: var(--H2-weight);
+      color: var(--color-primary);
+      width: 18ch;
+    }
+    p {
+      font-size: var(--font-base-par-size);
+      font-weight: var(--paragraph-weight);
+      line-height: var(--paragraph-line-height);
+      color: var(--text-secondary);
+      width: 45ch;
+    }
+
+    @include for-any-size(766px) {
+      h2 {
+        font-size: var(--H2-size-mobile-sm);
+        margin: 0 auto;
+      }
+
+      p {
+        line-height: var(--paragraph-line-height-mobile);
+      }
     }
   }
 
@@ -58,6 +91,9 @@
       }
     }
   }
+  #none {
+    display: none;
+  }
 
   .chart_info--picture {
     #redBar1,
@@ -65,7 +101,9 @@
     #redBar3,
     #redBar4,
     #redBar5 {
-      opacity: 1;
+      opacity: 0;
+      animation: bars 1.1s ease-in-out 1 forwards;
+      animation-delay: 0.5s;
     }
 
     #blueBar1,
@@ -73,30 +111,49 @@
     #blueBar3,
     #blueBar4,
     #blueBar5 {
-      opacity: 1;
+      opacity: 0;
+      animation: bars 1.1s ease-in-out 1 forwards;
     }
 
-    @keyframes redbars {
+    @keyframes bars {
       0% {
-        transform: scale(1);
+        opacity: 0;
       }
       50% {
-        transform: scale(1.12);
+        opacity: 0.5;
       }
       100% {
-        transform: scale(1);
+        opacity: 1;
       }
     }
 
-    @keyframes bluebars {
+    #eight {
+      animation: dates 0.5s;
+      animation-origin: center;
+    }
+    #nine {
+      animation: dates 0.5s;
+      animation-origin: center;
+      animation-delay: 0.1s;
+    }
+    #ten {
+      animation: dates 0.5s;
+      animation-origin: center;
+      animation-delay: 0.2s;
+    }
+    #eighteen {
+      animation: dates 0.5s;
+      animation-origin: center;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes dates {
       0% {
-        transform: scale(1);
+        opacity: 0;
       }
-      50% {
-        transform: scale(1.17);
-      }
+
       100% {
-        transform: scale(1);
+        opacity: 1;
       }
     }
   }
@@ -108,9 +165,25 @@
       text-align: center;
     }
 
+    h2 {
+      margin: 0 auto;
+    }
+    p {
+      margin: 0 auto;
+    }
+
+    .paragraph--maintext,
+    .paragraph--card,
+    .chart_info--text p {
+      font-size: var(--mobile-p-font-size);
+      width: var(--mobile-p-width);
+      text-align: center;
+      margin: 0 auto;
+    }
     .chart_info--picture {
-      img {
-        width: 50%;
+      img,
+      svg {
+        width: 70%;
       }
     }
 

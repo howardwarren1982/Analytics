@@ -21,9 +21,11 @@
   --paragraph-weight: 400;
   --paragraph-line-height: 27px;
 
-  --mobile-p-font-size: calc((17 / 16) * 1rem);
+  --paragraph-line-height-mobile: 20px;
+
+  --mobile-p-font-size: calc((15 / 16) * 1rem);
   --mobile-p-line-height: 20px;
-  --mobile-p-width: 35ch;
+  --mobile-p-width: 65%;
 
   --Hero-banner-weight: 700;
   --Hero-banner-size: calc((50 / 16) * 1rem);
@@ -39,6 +41,9 @@
   --H2-weight: 700;
   --H2-size: calc((40 / 16) * 1rem);
   --H2-line-height: 46px;
+
+  --H2-size-mobile: calc((33 / 16) * 1rem);
+  --H2-size-mobile-sm: calc((30 / 16) * 1rem);
 
   --H4-weight: 700;
   --H4-size: calc((30 / 16) * 1rem);

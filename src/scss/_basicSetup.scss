@@ -82,15 +82,24 @@ ul {
   margin: 30px auto;
 }
 // responsive font sizes
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   body {
   }
 }
-@media (min-width: 960px) {
+@media (max-width: 960px) {
   body {
   }
 }
-@media (min-width: 1100px) {
+@media (max-width: 1100px) {
   body {
+    .section--title__lightBG {
+      font-size: var(--H2-size-mobile);
+    }
+
+    .section--title__darkBG {
+      font-size: var(--H2-size-mobile);
+    }
   }
 }
+
+//--H2-size-mobile

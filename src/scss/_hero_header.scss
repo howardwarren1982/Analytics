@@ -30,11 +30,20 @@ header {
   }
 
   .navbar--responsive {
-    display: block;
+    display: none;
   }
 
   .navbar {
-    display: none;
+  }
+
+  @include for-any-size(1234px) {
+    .navbar--responsive {
+      display: block;
+    }
+
+    .navbar {
+      display: none;
+    }
   }
 
   .links--responsive {
@@ -132,7 +141,7 @@ header {
       text-align: center;
       gap: 5px;
       h1 {
-        font-size: 8vw;
+        font-size: 6.5vw;
       }
     }
 
